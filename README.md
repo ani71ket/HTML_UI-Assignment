@@ -8,9 +8,6 @@
   - [Prerequisites](#prerequisites)  
   - [Installation](#installation)  
   - [Usage](#usage)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
 
 ---
 
@@ -59,3 +56,10 @@ Alcami is a landing page that showcases the benefits of Alcami’s adaptogen ble
 ```bash
 git clone [Your Repository URL]
 cd [repository name]
+```
+2. Launch index.html in your browser
+
+### Usage
+- Open index.html in your browser.
+- Explore the page and try out the interactive features.
+- Adjust the code or styles as needed.
