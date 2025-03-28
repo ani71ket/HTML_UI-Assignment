@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+        }
+        
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 30px;
+            border: 2px solid #D4A017;
+            border-radius: 10px;
+            animation: borderPulse 2s infinite, slideIn 1s ease-out;
+        }
+
+        h1 {
+            color: #D4A017;
+            font-size: 3em;
+            text-shadow: 0 0 10px rgba(212, 160, 23, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #D4A017;
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px rgba(212, 160, 23, 0.5); }
+            50% { text-shadow: 0 0 20px rgba(212, 160, 23, 0.8), 0 0 30px rgba(212, 160, 23, 0.6); }
+        }
+
+        @keyframes borderPulse {
+            0% { border-color: #D4A017; }
+            50% { border-color: rgba(212, 160, 23, 0.3); }
+            100% { border-color: #D4A017; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translate(-50%, -100vh); }
+            to { transform: translate(-50%, -50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="announcement">
+        <button class="close-btn" onclick="closeBanner()">×</button>
+        <h1>COMING SOON!</h1>
+        <p style="color: #D4A017; animation: fadeIn 2s; margin-top: 20px;">
+            Stay tuned for exciting updates! 🔥
+        </p>
+    </div>
+
+    <script>
+        function closeBanner() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
+</body>
+</html>
