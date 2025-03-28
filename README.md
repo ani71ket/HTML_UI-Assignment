@@ -54,8 +54,8 @@ Alcami is a landing page that showcases the benefits of Alcami’s adaptogen ble
 ### Installation  
 1. Clone the repository:  
 ```bash
-git clone [Your Repository URL]
-cd [repository name]
+git clone [https://github.com/ani71ket/HTML_UI-Assignment]
+cd [HTML_UI-Assignment]
 ```
 2. Launch index.html in your browser
 
